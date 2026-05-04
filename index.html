@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokesh Veera Raghavulu - Creative AI Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Editorial Luxury Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Cormorant+Garamond:wght@400;700&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Canvas for Water Ripple Effect -->
+    <canvas id="backgroundCanvas" class="background-canvas"></canvas>
+
+    <!-- Main Container (No boxes, floating layout) -->
+    <div class="container">
+        
+        <!-- HERO SECTION: Large Image with Mask Fade + Name Overlay -->
+        <section class="hero" id="hero">
+            <div class="hero-image-wrapper">
+                <img src="assets/hero.jpg" alt="Lokesh at the Beach" class="hero-image">
+                <div class="hero-mask"></div>
+            </div>
+            <div class="hero-overlay"></div>
+            <!-- HEADER: Name Centered in Hero -->
+            <header class="header hero-header">
+                <h1 class="header-title">Lokesh Veera Raghavulu</h1>
+                <p class="header-subtitle">Creative AI Engineer</p>
+            </header>
+        </section>
+
+        <!-- NAVIGATION -->
+        <nav class="navigation">
+            <a href="#ai-lab" class="nav-link">AI Lab</a>
+            <a href="#n8n" class="nav-link">N8N</a>
+            <a href="#ai-agents" class="nav-link">AI Agents</a>
+            <a href="#uiux" class="nav-link">UI/UX</a>
+            <a href="#webdev" class="nav-link">Web Dev</a>
+            <a href="#creative" class="nav-link">Creative Space</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- AI LAB: Vertical List of Projects -->
+        <section id="ai-lab" class="ai-lab">
+            <h2 class="section-title">The AI Lab</h2>
+            <p class="section-subtitle">Experimental AI Projects</p>
+            
+            <div class="projects-container">
+                <!-- Project 1: V.O.I.D. Protocol -->
+                <div class="project-item" data-project="void">
+                    <h3 class="project-name">V.O.I.D. Protocol</h3>
+                    <p class="project-tagline">Autonomous Truth Checker</p>
+                    
+                    <div class="project-popup glass-popup" style="display: none;">
+                        <div class="popup-header">
+                            <h4>V.O.I.D. Protocol</h4>
+                            <button class="popup-close">&times;</button>
+                        </div>
+                        <div class="popup-content">
+                            <p><strong>Concept:</strong> Autonomous system using advanced NLP and fact-checking APIs to verify information in real-time.</p>
+                            <p><strong>Features:</strong> Multi-source validation, credibility scoring, real-time updates, visual bias detection.</p>
+                            <p><strong>Tech Stack:</strong> Python, TensorFlow, GPT-4 API, React.js</p>
+                            <p><strong>Impact:</strong> Combats misinformation with 94% accuracy rate.</p>
+                            <p><strong>Status:</strong> Production-ready AI system</p>
+                        </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Siren n8n -->
+                <div class="project-item" data-project="siren">
+                    <h3 class="project-name">Siren n8n</h3>
+                <p class="project-tagline">Marine Automation Engine</p>
+                    
+                    <div class="project-popup glass-popup" style="display: none;">
+                        <div class="popup-header">
+                        <h4>Siren n8n</h4>
+                            <button class="popup-close">&times;</button>
+                        </div>
+                        <div class="popup-content">
+                        <p><strong>Concept:</strong> Advanced n8n workflow automating complex data pipelines for marine research organizations.</p>
+                        <p><strong>Features:</strong> API integrations, conditional logic, webhook triggers, scheduled tasks, data transformation.</p>
+                        <p><strong>Tech Stack:</strong> n8n, Node.js, PostgreSQL, Webhooks</p>
+                        <p><strong>Impact:</strong> Reduces manual work by 70%, processes 10K+ records daily.</p>
+                            <p><strong>Status:</strong> Deployed & scaling</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Neuro-Lumina -->
+                <div class="project-item" data-project="neuro">
+                    <h3 class="project-name">Neuro-Lumina</h3>
+                <p class="project-tagline">Glassmorphic AI Interface</p>
+                    
+                    <div class="project-popup glass-popup" style="display: none;">
+                        <div class="popup-header">
+                        <h4>Neuro-Lumina</h4>
+                            <button class="popup-close">&times;</button>
+                        </div>
+                        <div class="popup-content">
+                        <p><strong>Concept:</strong> Futuristic UI concept combining glassmorphism with AI-generated layouts.</p>
+                        <p><strong>Features:</strong> Dynamic glass cards, 3D depth effects, particle animations, gesture controls.</p>
+                        <p><strong>Tech Stack:</strong> HTML5, CSS3, Three.js, WebGL</p>
+                        <p><strong>Status:</strong> Design concept exploring next-gen UI paradigms.</p>
+                            <p><strong>Vision:</strong> Revolutionary interface for AI-powered applications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- N8N WORKFLOWS SECTION -->
+        <section id="n8n" class="projects-section">
+            <h2 class="section-title">N8N Workflows</h2>
+            <p class="section-subtitle">Automation & Integration Pipelines</p>
+        
+            <div class="projects-container">
+                <!-- N8N Project 1 -->
+                <div class="project-item" data-project="email-workflow">
+                    <h3 class="project-name">Email Marketing Automation</h3>
+                    <p class="project-tagline">Intelligent Campaign Pipeline</p>
+                    
+                    <div class="project-popup glass-popup" style="display: none;">
+                        <div class="popup-header">
+                            <h4>Email Marketing Automation</h4>
+                            <button class="popup-close">&times;</button>
+                        </div>
+                        <div class="popup-content">
+                            <p><strong>Concept:</strong> Automated email marketing pipeline with AI-driven segmentation and personalization.</p>
+                            <p><strong>Workflow:</strong> Trigger → Segment Users → Generate Content → Send Campaign → Track Performance</p>
+                            <p><strong>Features:</strong> A/B testing, dynamic content, analytics tracking, automated follow-ups.</p>
+                            <p><strong>Tech:</strong> n8n, Mailchimp API, Segment, PostgreSQL</p>
+                            <p><strong>Result:</strong> 45% increase in open rates, 300+ campaigns automated.</p>
+                        </div>
+                    </div>
+            </div>
+
+                <!-- N8N Project 2 -->
+                <div class="project-item" data-project="data-pipeline">
+                    <h3 class="project-name">Real-time Data Pipeline</h3>
+                    <p class="project-tagline">ETL Orchestration System</p>
+                    
+                    <div class="project-popup glass-popup" style="display: none;">
+                        <div class="popup-header">
+                            <h4>Real-time Data Pipeline</h4>
+                            <button class="popup-close">&times;</button>
+                        </div>
+                        <div class="popup-content">
+                            <p><strong>Concept:</strong> High-performance ETL pipeline processing real-time data from multiple sources.</p>
+                            <p><strong>Workflow:</strong> Ingest → Transform → Validate → Load → Archive</p>
+                            <p><strong>Features:</strong> Error handling, data validation, conditional branching, parallel processing.</p>
+                            <p><strong>Tech:</strong> n8n, Apache Kafka, BigQuery, Cloud Functions</p>
+                            <p><strong>Scale:</strong> Processes 1M+ records daily with 99.9% uptime.</p>
+                        </div>
+                    </div>
+            </div>
+
+                <!-- N8N Project 3 -->
+                <div class="project-item" data-project="crm-sync">
+                    <h3 class="project-name">CRM Synchronization Hub</h3>
+                    <p class="project-tagline">Multi-Platform Data Sync</p>
+                    
+                    <div class="project-popup glass-popup" style="display: none;">
+                        <div class="popup-header">
+                            <h4>CRM Synchronization Hub</h4>
+                            <button class="popup-close">&times;</button>
+                        </div>
+                        <div class="popup-content">
+                            <p><strong>Concept:</strong> Unified sync system connecting Salesforce, HubSpot, and custom databases.</p>
+                            <p><strong>Workflow:</strong> Monitor Changes → Map Fields → Sync Data → Conflict Resolution</p>
+                            <p><strong>Features:</strong> Bi-directional sync, conflict detection, audit logs, webhook triggers.</p>
+                            <p><strong>Tech:</strong> n8n, Salesforce API, HubSpot API, Redis</p>
+                            <p><strong>Impact:</strong> Eliminates 20 hours/week of manual data entry.</p>
+            </div>
+        </div>
+                </div>
+
+                <!-- N8N Project 4 -->
+                <div class="project-item" data-project="slack-monitoring">
+                    <h3 class="project-name">Slack Analytics & Monitoring</h3>
+                    <p class="project-tagline">Team Intelligence System</p>
+                    
+                    <div class="project-popup glass-popup" style="display: none;">
+                        <div class="popup-header">
+                            <h4>Slack Analytics & Monitoring</h4>
+                            <button class="popup-close">&times;</button>
+                        </div>
+                        <div class="popup-content">
+                            <p><strong>Concept:</strong> Real-time Slack monitoring with AI-powered insights and alerts.</p>
+                            <p><strong>Workflow:</strong> Listen to Messages → Analyze Sentiment → Detect Anomalies → Send Alerts</p>
+                            <p><strong>Features:</strong> Sentiment analysis, keyword monitoring, user activity tracking, anomaly detection.</p>
+                            <p><strong>Tech:</strong> n8n, Slack API, NLP.js, Google Cloud</p>
+                            <p><strong>Usage:</strong> Deployed across 5 companies, monitors 50K+ messages daily.</p>
+            </div>
+        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI AGENTS SECTION -->
+        <section id="ai-agents" class="projects-section">
+            <h2 class="section-title">AI Agents</h2>
+            <p class="section-subtitle">Intelligent Autonomous Systems</p>
+            
+            <div class="projects-container">
+                <!-- AI Agent 1 -->
+                <div class="project-item" data-project="support-agent">
+                    <h3 class="project-name">Natural Language Support Agent</h3>
+                    <p class="project-tagline">24/7 Customer Intelligence</p>
+                    
+                    <div class="project-popup glass-popup" style="display: none;">
+                        <div class="popup-header">
+                            <h4>Natural Language Support Agent</h4>
+                            <button class="popup-close">&times;</button>
+                </div>
+                        <div class="popup-content">
+                            <p><strong>Concept:</strong> AI agent handling customer support queries with human-like understanding.</p>
+                            <p><strong>Capabilities:</strong> Intent recognition, context awareness, multi-turn conversations, escalation logic.</p>
+                            <p><strong>Performance:</strong> Resolves 85% of tickets without human intervention, 4.8/5 customer satisfaction.</p>
+                            <p><strong>Tech Stack:</strong> GPT-4, LangChain, Python, FastAPI, PostgreSQL</p>
+                            <p><strong>Deployed:</strong> Handling 500+ daily interactions for SaaS companies.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Agent 2 -->
+                <div class="project-item" data-project="sentiment-agent">
+                    <h3 class="project-name">Sentiment Analysis Engine</h3>
+                    <p class="project-tagline">Emotional Intelligence System</p>
+                    
+                    <div class="project-popup glass-popup" style="display: none;">
+                        <div class="popup-header">
+                            <h4>Sentiment Analysis Engine</h4>
+                            <button class="popup-close">&times;</button>
+                        </div>
+                        <div class="popup-content">
+                            <p><strong>Concept:</strong> Advanced sentiment analysis with emotion detection and trend forecasting.</p>
+                            <p><strong>Features:</strong> Multi-lingual support, aspect-based sentiment, emotion extraction, trend analysis.</p>
+                            <p><strong>Accuracy:</strong> 94% accuracy across 12 languages, detects sarcasm and cultural nuances.</p>
+                            <p><strong>Tech Stack:</strong> Transformers, BERT, FastText, Redis, Elasticsearch</p>
+                            <p><strong>Applications:</strong> Social media monitoring, brand reputation, customer feedback analysis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Agent 3 -->
+                <div class="project-item" data-project="code-agent">
+                    <h3 class="project-name">Code Generation Assistant</h3>
+                    <p class="project-tagline">Intelligent Developer Companion</p>
+                    
+                    <div class="project-popup glass-popup" style="display: none;">
+                        <div class="popup-header">
+                            <h4>Code Generation Assistant</h4>
+                            <button class="popup-close">&times;</button>
+                        </div>
+                        <div class="popup-content">
+                            <p><strong>Concept:</strong> AI agent that generates, optimizes, and debugs code across multiple languages.</p>
+                            <p><strong>Capabilities:</strong> Function generation, bug fixing, code review, documentation, test generation.</p>
+                            <p><strong>Languages:</strong> Python, JavaScript, TypeScript, Go, Rust, C++, Java</p>
+                            <p><strong>Tech Stack:</strong> Codex API, AST parsing, Static Analysis, VS Code extension</p>
+                            <p><strong>Impact:</strong> Reduces development time by 35%, improves code quality by 40%.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- UI/UX PROJECTS SECTION -->
+        <section id="uiux" class="projects-section">
+            <h2 class="section-title">UI/UX Design Projects</h2>
+            <p class="section-subtitle">Digital Experience & Interface Design</p>
+        
+            <div class="projects-container">
+                <!-- UI/UX Project 1 -->
+                <div class="project-item" data-project="saas-dashboard">
+                    <h3 class="project-name">SaaS Analytics Dashboard</h3>
+                    <p class="project-tagline">Enterprise Data Visualization</p>
+                    
+                    <div class="project-popup glass-popup" style="display: none;">
+                        <div class="popup-header">
+                            <h4>SaaS Analytics Dashboard</h4>
+                            <button class="popup-close">&times;</button>
+                        </div>
+                        <div class="popup-content">
+                            <p><strong>Concept:</strong> Modern SaaS dashboard for real-time analytics and business intelligence.</p>
+                            <p><strong>Design Elements:</strong> Glassmorphic cards, interactive charts, dark mode, responsive layout.</p>
+                            <p><strong>Features:</strong> Custom widgets, drag-drop configuration, real-time updates, export options.</p>
+                            <p><strong>Tech:</strong> React, D3.js, Tailwind CSS, TypeScript</p>
+                            <p><strong>Result:</strong> 40% faster data insights, used by 2000+ enterprise users.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX Project 2 -->
+                <div class="project-item" data-project="ecommerce-app">
+                    <h3 class="project-name">E-Commerce Mobile App</h3>
+                    <p class="project-tagline">Next-Gen Shopping Experience</p>
+                    
+                    <div class="project-popup glass-popup" style="display: none;">
+                        <div class="popup-header">
+                            <h4>E-Commerce Mobile App</h4>
+                            <button class="popup-close">&times;</button>
+                        </div>
+                        <div class="popup-content">
+                            <p><strong>Concept:</strong> Premium mobile e-commerce app with AI recommendations and AR features.</p>
+                            <p><strong>User Experience:</strong> One-tap checkout, saved preferences, personalized feeds, AR try-on.</p>
+                            <p><strong>Design Focus:</strong> Minimalist, fast loading, accessibility-first, smooth animations.</p>
+                            <p><strong>Tech:</strong> React Native, Firebase, ARKit, Redux</p>
+                            <p><strong>Metrics:</strong> 3.2M downloads, 4.8/5 rating, 35% conversion rate.</p>
+                        </div>
+                    </div>
+            </div>
+
+                <!-- UI/UX Project 3 -->
+                <div class="project-item" data-project="glass-kit">
+                    <h3 class="project-name">Glassmorphic Component Library</h3>
+                    <p class="project-tagline">Reusable Design System</p>
+                    
+                    <div class="project-popup glass-popup" style="display: none;">
+                        <div class="popup-header">
+                            <h4>Glassmorphic Component Library</h4>
+                            <button class="popup-close">&times;</button>
+                        </div>
+                        <div class="popup-content">
+                            <p><strong>Concept:</strong> Comprehensive design system with 50+ glassmorphic components.</p>
+                            <p><strong>Components:</strong> Buttons, cards, modals, inputs, navigation, animations, utilities.</p>
+                            <p><strong>Documentation:</strong> Storybook integration, code examples, design guidelines, accessibility notes.</p>
+                            <p><strong>Tech:</strong> React, CSS3, Framer Motion, TypeScript</p>
+                            <p><strong>Adoption:</strong> 1000+ stars on GitHub, used by 15+ production apps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WEB DEVELOPMENT PROJECTS SECTION -->
+        <section id="webdev" class="projects-section">
+            <h2 class="section-title">Web Development</h2>
+            <p class="section-subtitle">Full-Stack Applications & Platforms</p>
+            
+            <div class="projects-container">
+                <!-- Vibely Project -->
+                <div class="project-item" data-project="vibely">
+                    <h3 class="project-name">Vibely</h3>
+                    <p class="project-tagline">Connecting Strangers, Creating Meaningful Moments</p>
+                    
+                    <div class="project-popup glass-popup" style="display: none;">
+                        <div class="popup-header">
+                            <h4>Vibely - Strangers Connection Platform</h4>
+                            <button class="popup-close">&times;</button>
+                        </div>
+                        <div class="popup-content">
+                            <p><strong>Mission:</strong> Break the isolation barrier by connecting like-minded strangers for genuine conversations and meaningful relationships.</p>
+                            <p><strong>Core Features:</strong> Smart matching algorithm, interest-based communities, video/audio calls, real-time chat, user safety verification.</p>
+                            <p><strong>Unique Value:</strong> AI-powered personality matching, icebreaker suggestions, verified user profiles, conversation history.</p>
+                            <p><strong>Tech Stack:</strong> React, Node.js, WebRTC, PostgreSQL, Redis, AWS, Socket.io</p>
+                            <p><strong>Current Status:</strong> Beta phase, 5K+ active users, 2M+ meaningful conversations facilitated.</p>
+                            <p><strong>Website:</strong> <a href="https://vibely-chat-app.vercel.app/" target="_blank" style="color: #A7826E; text-decoration: underline; font-weight: bold;">🌐 Visit Vibely</a></p>
+                            <p><strong>GitHub:</strong> <a href="https://github.com/lokeshveeraraghavulu/vibely" target="_blank" style="color: #A7826E; text-decoration: underline;">github.com/lokeshveeraraghavulu/vibely</a></p>
+                            <p><strong>Impact:</strong> Reducing loneliness in digital age, one connection at a time.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- CREATIVE SPACE: Quotes & Inspiration -->
+        <section id="creative" class="creative-space">
+            <h2 class="section-title">Creative Space</h2>
+            <p class="section-subtitle">Words of Wisdom & Vision</p>
+            
+            <div class="quotes-container">
+                <div class="quote-card">
+                    <div class="quote-text">
+                        <p>"ALONE<span style="font-size: 0.8em;">—</span>YOU, ONLY YOU. NO ONE TRULY STAYS FOR YOU: FRIENDS, FAMILY, LOVE THEY HAVE THEIR OWN PATHS. SO LOVE YOURSELF RUTHLESSLY, CHOOSE YOURSELF, TRUST NO ONE NOT EVEN BLOOD. BUILD INCH BY INCH, NEVER LOOK BACK FORGET THE PAST. MAKE MONEY LIKE A BEAST LIKE TOMORROW WON'T COME, SPEND LIKE YOU'RE FUCKING THE WORLD WISELY YET BOLDLY. NEVER COMPROMISE, FINISH WHAT YOU START, HUNT THAT 1% LIKE A WOLF. BE THE ONE WHO FUCKS THE MONEY, FUCK ONLY THE FINEST<span style="font-size: 0.8em;">—</span>NEVER THE USED. RESPECT MONEY BUT DON'T WORSHIP IT. BE THE RELENTLESS, BE THE FILTHY RICH. THE GOAL ISN'T COMFORT."</p>
+                        <p class="quote-author">~ Lokesh Veera Raghavulu</p>
+                    </div>
+            </div>
+
+                <div class="quote-card">
+                    <div class="quote-text">
+                        <p>"IN THE DANCE BETWEEN LOGIC AND IMAGINATION, GREATNESS IS BORN. BUILD BEAUTIFUL SYSTEMS THAT SOLVE REAL PROBLEMS. CRAFT MEANINGFUL EXPERIENCES THAT TOUCH HEARTS. LIVE DELIBERATELY, LOVE FIERCELY, CREATE BOLDLY. YOUR CODE IS YOUR VOICE—MAKE IT HEARD. YOUR VISION IS YOUR COMPASS—FOLLOW IT RELENTLESSLY. SUCCESS ISN'T A DESTINATION, IT'S THE BECOMING. BE EXTRAORDINARY. BE UNSTOPPABLE. BE YOURSELF."</p>
+                        <p class="quote-author">~ Creative Manifesto</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- INTERESTS: Inspiring Things (Beyond the Code) -->
+        <section id="interests" class="interests">
+        <h2 class="section-title">Beyond the Code</h2>
+            <p class="section-subtitle">What Moves Me</p>
+        
+            <div class="interests-grid">
+            <div class="interest-item">
+                    <div class="interest-icon">✨</div>
+                    <h3>Design Philosophy</h3>
+                    <p>The intersection of aesthetics and functionality fascinates me endlessly.</p>
+                </div>
+            <div class="interest-item">
+                    <div class="interest-icon">🌊</div>
+                    <h3>Nature & Flow</h3>
+                    <p>Ocean waves and natural patterns inspire my digital creations.</p>
+                </div>
+            <div class="interest-item">
+                    <div class="interest-icon">🎨</div>
+                    <h3>Creative Expression</h3>
+                    <p>Every project is an opportunity to express something new and meaningful.</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- CONTACT: Floating Glass Icons -->
+        <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's Create Together</p>
+        
+            <div class="contact-info">
+                <div class="contact-item">
+                    <p class="contact-label">Email</p>
+                    <a href="mailto:lokeshveeraraghavalu@gmail.com" class="contact-link">lokeshveeraraghavalu@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <p class="contact-label">Phone</p>
+                    <a href="tel:+919553552747" class="contact-link">+91 9553552747</a>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/veera_raghavulu08?igsh=MXRrdWVyYWo4eTBrMg==" target="_blank" class="social-icon glass-icon" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/samarthakurthi-lokesh-veera-raghavalu-828998290?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon glass-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:lokeshveeraraghavalu@gmail.com" class="social-icon glass-icon" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+            <p>&copy; 2026 Lokesh Veera Raghavulu. All thoughts preserved in digital amber.</p>
+    </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
