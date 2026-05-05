@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio QR Code - Lokesh Veera Raghavulu</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #221F1F 0%, #444B31 100%);
+            font-family: 'Cormorant Garamond', serif;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            max-width: 600px;
+        }
+        h1 {
+            color: #221F1F;
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+        .subtitle {
+            color: #A7826E;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+        p {
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        #qrcode {
+            display: inline-block;
+            padding: 20px;
+            background: white;
+            margin: 2rem 0;
+            border: 3px solid #A7826E;
+        }
+        .url-box {
+            background: #F1EBE1;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .url {
+            color: #221F1F;
+            font-weight: bold;
+            font-size: 0.95rem;
+            word-break: break-all;
+            font-family: 'Courier New', monospace;
+        }
+        .button-group {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+        }
+        .download-btn {
+            background-color: #A7826E;
+            color: white;
+        }
+        .download-btn:hover {
+            background-color: #8B6B52;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(167, 130, 110, 0.4);
+        }
+        .open-btn {
+            background-color: #444B31;
+            color: white;
+        }
+        .open-btn:hover {
+            background-color: #333A24;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(68, 75, 49, 0.4);
+        }
+        .info {
+            background: #f0f0f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .info h3 {
+            color: #221F1F;
+            margin-bottom: 0.5rem;
+        }
+        .info p {
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 2rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            #qrcode {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌊 Lokesh Veera Raghavulu</h1>
+        <p class="subtitle">Creative AI Engineer Portfolio</p>
+        
+        <p>Scan the QR code below to view the full portfolio:</p>
+        
+        <div class="url-box">
+            <div class="url">
+                shreeraghava.github.io/portfolio/
+            </div>
+        </div>
+        
+        <div id="qrcode"></div>
+        
+        <div class="button-group">
+            <button class="open-btn" onclick="openPortfolio()">
+                🔗 Open Portfolio
+            </button>
+            <button class="download-btn" onclick="downloadQR()">
+                ⬇️ Download QR Code
+            </button>
+        </div>
+
+        <div class="info">
+            <h3>📱 How to Use</h3>
+            <p>✓ Scan the QR code with your phone camera</p>
+            <p>✓ Or click "Open Portfolio" to visit directly</p>
+            <p>✓ Download the QR code to share with others</p>
+        </div>
+    </div>
+
+    <script src="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Cormorant+Garamond:wght@400;700&display=swap"></script>
+    <script>
+        // Generate QR Code
+        const qr = new QRCode(document.getElementById("qrcode"), {
+            text: "https://shreeraghava.github.io/portfolio/",
+            width: 350,
+            height: 350,
+            colorDark: "#221F1F",
+            colorLight: "#FFFFFF",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+
+        function openPortfolio() {
+            window.location.href = 'https://shreeraghava.github.io/portfolio/';
+        }
+
+        function downloadQR() {
+            const canvas = document.querySelector('#qrcode canvas');
+            const link = document.createElement('a');
+            link.href = canvas.toDataURL('image/png');
+            link.download = 'lokesh-portfolio-qr-code.png';
+            link.click();
+        }
+    </script>
+</body>
+</html>

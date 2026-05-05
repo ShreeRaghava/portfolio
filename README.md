@@ -1,30 +1,25 @@
-# 🌊 Ocean-Themed Portfolio Website
+# 🌊 Lokesh Veera Raghavulu - Creative AI Engineer Portfolio
 
-Welcome to your professional ocean-themed portfolio! This is a modern, elegant, and fully responsive website designed to showcase your skills, projects, and achievements.
+Welcome to my professional portfolio! This is a modern, editorial-style portfolio showcasing AI projects, N8N workflows, and creative work.
 
-## 📋 Features Included
+## 🚀 Live Portfolio
 
-✨ **Modern Design Elements:**
-- Glass Morphism effects (frosted glass look)
-- Glow animations and water effects
-- Smooth scroll animations
-- 3D hover transforms
-- Ocean wave animations
-- Responsive design (mobile, tablet, desktop)
+**Visit**: https://shreeraghava.github.io/portfolio/
 
-📚 **Complete Sections:**
-- Hero section with call-to-action
-- About me with interests
-- Skills showcase (6 categories)
-- UI/UX design projects
-- AI-built websites
-- N8N automation workflows
-- AI chatbots showcase
-- Published book display
-- Personal photo gallery
-- GitHub projects integration
-- Contact form & social links
-- Professional footer
+**QR Code**: https://shreeraghava.github.io/portfolio/qr-code.html
+
+## ✨ Features
+
+- **AI Lab**: Autonomous systems and experimental AI projects (3 projects)
+- **N8N Workflows**: Automation and integration pipelines (4 projects)
+- **AI Agents**: Intelligent autonomous systems (3 projects)
+- **UI/UX Design**: Digital experience projects (3 projects)
+- **Web Development**: Full-stack applications (1 project - Vibely)
+- **Creative Space**: Words of wisdom and inspiration
+- **Interactive Popups**: Auto-closing project details with smooth scrolling
+- **Glassmorphism Design**: Modern glass-effect UI with no boxes
+- **Master Prompt Colors**: Custom color system throughout
+- **Responsive**: Works perfectly on all devices
 
 ## 🚀 Quick Start
 
